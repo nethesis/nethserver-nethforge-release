@@ -1,15 +1,15 @@
 [nethforge]
-name=NethForge modules - $basearch
-baseurl=http://pulp.nethserver.org/nethserver/$releasever/nethforge/$basearch/
+name=NethForge
+mirrorlist=http://mirrorlist.nethserver.org/$distroversion/nethserver?release=$releasever&repo=nethforge&arch=$basearch
+#baseurl=http://mirror.nethserver.org/nethserver/$distroversion/nethforge/$basearch/
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-NETHFORGE-6
 enabled=1
-gpgcheck=1
 enablegroups=1
 
 [nethforge-testing]
-name=NethForge modules - $basearch - Testing
-baseurl=http://pulp.nethserver.org/nethserver/$releasever/nethforge-testing/$basearch/
+name=NethForge Testing
+mirrorlist=http://mirrorlist.nethserver.org/$distroversion/nethserver?release=$releasever&repo=nethforge-testing&arch=$basearch
+#baseurl=http://packages.nethserver.org/nethserver/$distroversion/nethforge-testing/$basearch/
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-NETHFORGE-6
 enabled=0
-gpgcheck=1
 enablegroups=1
