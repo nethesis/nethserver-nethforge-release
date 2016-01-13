@@ -1,7 +1,7 @@
 Summary: NethForge repositories
 Name: nethserver-nethforge-release
-Version: 6
-Release: 1
+Version: 7
+Release: 0.1%{dist}
 License: GPL
 BuildArch: noarch
 Source0: NethForge.repo 
@@ -37,5 +37,8 @@ install -pm 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d
 /etc/pki/rpm-gpg/RPM-GPG-KEY-NETHFORGE-6
 
 %changelog
+* Wed Jan 13 2016 Davide Principi <davide.principi@nethesis.it> - 7-0.1
+- Updated repo URLs for ns7
+
 * Wed Jun 04 2014 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 6-1
 - Initial Package
