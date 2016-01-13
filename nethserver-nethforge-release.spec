@@ -19,18 +19,16 @@ GPG key.
 install -pm 644 %{SOURCE0} .
 install -pm 644 %{SOURCE1} .
 
-%build
-
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 #GPG Key
 install -Dpm 644 %{SOURCE1} \
-    $RPM_BUILD_ROOT%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-NETHFORGE-6
+    %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-NETHFORGE-6
 
 # yum
-install -dm 755 $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
-install -pm 644 %{SOURCE0} $RPM_BUILD_ROOT%{_sysconfdir}/yum.repos.d
+install -dm 755 %{buildroot}%{_sysconfdir}/yum.repos.d
+install -pm 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d
 
 
 %files
