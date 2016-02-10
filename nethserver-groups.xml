@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comps PUBLIC "-//Red Hat, Inc.//DTD Comps info//EN" "comps.dtd">
+<comps>
+  
+  <group>
+    <id>nethserver-phpmyadmin</id>
+    <name>phpMyAdmin</name>
+    <description>Manage mySQL from a web interface</description>
+    <uservisible>true</uservisible>
+    <packagelist>
+      <packagereq type='mandatory'>nethserver-phpmyadmin</packagereq>
+    </packagelist>
+  </group>
+
+
+  <category>
+    <id>nethforge</id>
+    <name>NethForge</name>
+    <description>Extra modules mantained by NethServer Community</description>
+    <description xml:lang="it">Moduli aggiuntivi mantenuti dalla Community di NethServer</description>
+    <grouplist>
+      <groupid>nethserver-phpmyadmin</groupid>
+    </grouplist>
+  </category>
+
+
+</comps>
