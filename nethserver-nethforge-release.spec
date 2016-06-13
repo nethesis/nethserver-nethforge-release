@@ -5,7 +5,7 @@ Release: 0.1%{dist}
 License: GPL
 BuildArch: noarch
 Source0: NethForge.repo 
-Source1: RPM-GPG-KEY-NETHFORGE-6
+Source1: RPM-GPG-KEY-NethForge-7
 
 Requires: nethserver-release
 
@@ -24,7 +24,7 @@ rm -rf %{buildroot}
 
 #GPG Key
 install -Dpm 644 %{SOURCE1} \
-    %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-NETHFORGE-6
+    %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-NethForge-7
 
 # yum
 install -dm 755 %{buildroot}%{_sysconfdir}/yum.repos.d
@@ -34,7 +34,7 @@ install -pm 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d
 %files
 %defattr(-,root,root,-)
 %config(noreplace) /etc/yum.repos.d/NethForge.repo
-/etc/pki/rpm-gpg/RPM-GPG-KEY-NETHFORGE-6
+/etc/pki/rpm-gpg/RPM-GPG-KEY-NethForge-7
 
 %changelog
 * Wed Jan 13 2016 Davide Principi <davide.principi@nethesis.it> - 7-0.1
