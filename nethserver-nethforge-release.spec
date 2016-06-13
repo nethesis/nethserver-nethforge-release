@@ -1,7 +1,7 @@
 Summary: NethForge repositories
 Name: nethserver-nethforge-release
 Version: 7
-Release: 0.1%{dist}
+Release: 0.2%{dist}
 License: GPL
 BuildArch: noarch
 Source0: NethForge.repo 
