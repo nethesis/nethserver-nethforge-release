@@ -7,7 +7,7 @@ enabled=1
 enablegroups=1
 
 [nethforge-testing]
-name=NethForge $releasever testing
+name=NethForge $releasever - Testing
 mirrorlist=http://mirrorlist.nethserver.org/$releasever/nethserver?release=$releasever&repo=nethforge-testing&arch=$basearch
 #baseurl=http://packages.nethserver.org/nethserver/$releasever/nethforge-testing/$basearch/
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-NethForge-7
