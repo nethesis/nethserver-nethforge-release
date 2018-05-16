@@ -1,6 +1,6 @@
 [nethforge]
 name=NethForge $releasever
-mirrorlist=http://mirrorlist.nethserver.org/$releasever/nethserver?release=$releasever&repo=nethforge&arch=$basearch
+mirrorlist=http://mirrorlist.nethserver.org/$releasever/nethserver?release=$releasever&repo=nethforge&arch=$basearch&nsrelease=$nsrelease
 #baseurl=http://mirror.nethserver.org/nethserver/$releasever/nethforge/$basearch/
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-NethForge-7
 enabled=1
@@ -8,7 +8,7 @@ enablegroups=1
 
 [nethforge-testing]
 name=NethForge $releasever - Testing
-mirrorlist=http://mirrorlist.nethserver.org/$releasever/nethserver?release=$releasever&repo=nethforge-testing&arch=$basearch
+mirrorlist=http://mirrorlist.nethserver.org/$releasever/nethserver?release=$releasever&repo=nethforge-testing&arch=$basearch&nsrelease=$nsrelease
 #baseurl=http://packages.nethserver.org/nethserver/$releasever/nethforge-testing/$basearch/
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-NethForge-7
 enabled=0
