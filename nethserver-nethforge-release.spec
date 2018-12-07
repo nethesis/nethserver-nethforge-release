@@ -1,7 +1,7 @@
 Summary: NethForge repositories
 Name: nethserver-nethforge-release
 Version: 7
-Release: 2%{dist}
+Release: 3%{dist}
 License: GPL
 BuildArch: noarch
 Source0: NethForge.repo 
@@ -37,6 +37,9 @@ install -pm 644 %{SOURCE0} %{buildroot}%{_sysconfdir}/yum.repos.d
 /etc/pki/rpm-gpg/RPM-GPG-KEY-NethForge-7
 
 %changelog
+* Fri Dec 07 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 7-3
+- Repository metadata GPG signature - NethServer/dev#5664
+
 * Thu May 31 2018 Davide Principi <davide.principi@nethesis.it> - 7-2
 - Fix the YUM mirrorlist URL
 
